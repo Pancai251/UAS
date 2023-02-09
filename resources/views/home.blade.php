@@ -23,10 +23,11 @@
               class="" Style="width:150px" />
           </div>
           <div class="card-body">
-            <a href="" class="text-reset">
-              <h5 class="card-title mb-3">{{ $p->name }}</h5>
-            </a>
+          <h4 class="card-title mb-3">{{ $p->name }}</h4>
             <h6 class="mb-3">RP {{ $p->price }}</h6>
+            <a href="#" class="text-reset">
+              <h6 class="mb-3">Detail</h6>
+            </a>
           </div>
         </div>
       </div>
