@@ -7,18 +7,18 @@
 -run command "php artisan migrate"
 
 -run command "php artisan serve"
-
-
-
-
-
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
 
 
 
