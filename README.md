@@ -4,9 +4,11 @@
 
 -run command "npm run dev"
 
--run command "php artisan migrate"
+"php artisan migrate"
 
--run command "php artisan serve"
+"php artisan db:seed"
+
+"php artisan serve"
 .
 
 .
