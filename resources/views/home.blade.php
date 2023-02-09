@@ -12,23 +12,23 @@
     </div>
   </div>
 </nav>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+<div class="text-center container py-5">
+<div class="row">
+    @foreach($product as $p)
+      <div class="col-lg-2 col-md-15 mb-4">
+        <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+            data-mdb-ripple-color="light">
+            <img src = "{{url($p->photo)}}"
+              class="" Style="width:150px" />
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset">
+              <h5 class="card-title mb-3">{{ $p->name }}</h5>
+            </a>
+            <h6 class="mb-3">RP {{ $p->price }}</h6>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+        @endforeach
 @endsection

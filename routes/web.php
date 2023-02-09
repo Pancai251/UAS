@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,5 @@ Route::get('/profile', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
+
+Route::get('/home', [ProductController::class,'showAll']);
