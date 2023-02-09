@@ -6,7 +6,7 @@
 
 "php artisan migrate"
 
-"php artisan db:seed"
+"php artisan db:seed --class=ProductSeeder"
 
 "php artisan serve"
 .
